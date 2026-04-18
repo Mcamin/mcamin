@@ -87,8 +87,6 @@ approach:
 ---
 
 ## 📫 Reach Me
-
-* GitHub: https://github.com/Mcamin
 * LinkedIn: https://www.linkedin.com/in/ahmed-amine-mchayaa
 
 ---
