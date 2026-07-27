@@ -56,6 +56,15 @@ ai_automation: [LLM routing, RAG/agents, MCP tool integration, workflow automati
 
 ---
 
+## 📊 GitHub Stats
+
+<p align="center">
+  <img height="165" src="https://github-stats-extended.vercel.app/api?username=Mcamin&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&theme=tokyonight" />
+  <img height="165" src="https://github-stats-extended.vercel.app/api/top-langs/?username=Mcamin&layout=compact&langs_count=8&hide_border=true&theme=tokyonight" />
+</p>
+
+---
+
 ## 🧠 Current Focus
 
 * **Platform & MLOps** — self-hosted stacks (Docker Swarm, Ansible), MLflow, monitoring
