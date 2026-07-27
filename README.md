@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Mcamin"><img src="https://img.shields.io/github/followers/Mcamin?style=for-the-badge&logo=github&color=2c5364" /></a>
+  <a href="https://github.com/Mcamin"><img src="https://img.shields.io/github/followers/Mcamin?style=for-the-badge&logo=github&color=2c5364&label=Follow" /></a>
   <a href="https://www.linkedin.com/in/ahmed-amine-mchayaa"><img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin" /></a>
   <a href="https://mchayaa.com"><img src="https://img.shields.io/badge/mchayaa.com-Website-2c5364?style=for-the-badge&logo=hackthebox&logoColor=white" /></a>
 </p>
@@ -25,26 +25,26 @@ Not scripts — **systems**: reliable, observable, and maintainable. M.Sc. Compu
 ## ⚙️ Core Expertise
 
 ```yaml
-backend:      [Python, FastAPI, Go, Node/TypeScript, REST, WebSocket]
-data:         [PostgreSQL, MySQL, Redis, MongoDB, ETL & streaming pipelines]
-platform:     [Docker, Docker Swarm, Kubernetes, Ansible (IaC), Traefik, CI/CD]
-observability:[Prometheus, Grafana, centralized logging, automated backups]
-cloud:        [GCP, AWS, Azure, GitHub Actions, GitLab CI]
-ai_automation:[LLM routing, RAG/agents, MCP tool integration, workflow automation]
+backend:       [Python, FastAPI, Go, Node/TypeScript, REST, WebSocket]
+data:          [PostgreSQL, MySQL, Redis, MongoDB, ETL & streaming pipelines]
+platform:      [Docker, Docker Swarm, Kubernetes, Ansible (IaC), Traefik, CI/CD]
+observability: [Prometheus, Grafana, centralized logging, automated backups]
+cloud:         [GCP, AWS, Azure, GitHub Actions, GitLab CI]
+ai_automation: [LLM routing, RAG/agents, MCP tool integration, workflow automation]
 ```
 
 ---
 
 ## 🚀 Featured Work
 
-<p align="center">
-  <a href="https://github.com/Mcamin/mlflow-selfhosted"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Mcamin&repo=mlflow-selfhosted&theme=tokyonight" /></a>
-  <a href="https://github.com/Mcamin/homelab-compose-stack"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Mcamin&repo=homelab-compose-stack&theme=tokyonight" /></a>
-</p>
-<p align="center">
-  <a href="https://github.com/Mcamin/cftc-cot"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Mcamin&repo=cftc-cot&theme=tokyonight" /></a>
-  <a href="https://github.com/Mcamin/JobScraper"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Mcamin&repo=JobScraper&theme=tokyonight" /></a>
-</p>
+| Project | What it is | |
+| :-- | :-- | :-- |
+| **[mlflow-selfhosted](https://github.com/Mcamin/mlflow-selfhosted)** | Self-hosted MLflow tracking server (MinIO + Postgres) — reproducible MLOps infra | ![](https://img.shields.io/github/stars/Mcamin/mlflow-selfhosted?style=flat-square&label=%E2%98%85&color=2c5364) ![](https://img.shields.io/github/languages/top/Mcamin/mlflow-selfhosted?style=flat-square) |
+| **[homelab-compose-stack](https://github.com/Mcamin/homelab-compose-stack)** | Reusable Docker Compose templates for self-hosted homelab infrastructure | ![](https://img.shields.io/github/stars/Mcamin/homelab-compose-stack?style=flat-square&label=%E2%98%85&color=2c5364) ![](https://img.shields.io/github/languages/top/Mcamin/homelab-compose-stack?style=flat-square) |
+| **[cftc-cot](https://github.com/Mcamin/cftc-cot)** | Python library to download & parse CFTC Commitments-of-Traders data | ![](https://img.shields.io/github/stars/Mcamin/cftc-cot?style=flat-square&label=%E2%98%85&color=2c5364) ![](https://img.shields.io/github/languages/top/Mcamin/cftc-cot?style=flat-square) |
+| **[cot-analysis](https://github.com/Mcamin/cot-analysis)** | COT feature engineering & market-sentiment / directional-bias scoring | ![](https://img.shields.io/github/stars/Mcamin/cot-analysis?style=flat-square&label=%E2%98%85&color=2c5364) ![](https://img.shields.io/github/languages/top/Mcamin/cot-analysis?style=flat-square) |
+| **[JobScraper](https://github.com/Mcamin/JobScraper)** | FastAPI microservice scraping job listings → MySQL → REST API | ![](https://img.shields.io/github/stars/Mcamin/JobScraper?style=flat-square&label=%E2%98%85&color=2c5364) ![](https://img.shields.io/github/languages/top/Mcamin/JobScraper?style=flat-square) |
+| **[termin-bot](https://github.com/Mcamin/termin-bot)** | Berlin Ausländerbehörde appointment-finder bot | ![](https://img.shields.io/github/stars/Mcamin/termin-bot?style=flat-square&label=%E2%98%85&color=2c5364) ![](https://img.shields.io/github/languages/top/Mcamin/termin-bot?style=flat-square) |
 
 ---
 
@@ -52,15 +52,6 @@ ai_automation:[LLM routing, RAG/agents, MCP tool integration, workflow automatio
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=python,ts,go,fastapi,docker,kubernetes,ansible,linux,postgres,redis,grafana,gcp" />
-</p>
-
----
-
-## 📊 Activity & Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Mcamin&show_icons=true&theme=tokyonight" />
-  <img src="https://streak-stats.demolab.com/?user=Mcamin&theme=tokyonight" />
 </p>
 
 ---
@@ -75,9 +66,11 @@ ai_automation:[LLM routing, RAG/agents, MCP tool integration, workflow automatio
 
 ## 📫 Reach Me
 
-* **LinkedIn:** https://www.linkedin.com/in/ahmed-amine-mchayaa
-* **Website:** https://mchayaa.com
-* **GitHub:** https://github.com/Mcamin
+<p align="center">
+  <a href="https://www.linkedin.com/in/ahmed-amine-mchayaa"><img src="https://img.shields.io/badge/LinkedIn-ahmed--amine--mchayaa-blue?style=flat-square&logo=linkedin" /></a>
+  <a href="https://github.com/Mcamin"><img src="https://img.shields.io/badge/GitHub-Mcamin-181717?style=flat-square&logo=github" /></a>
+  <a href="https://mchayaa.com"><img src="https://img.shields.io/badge/Website-mchayaa.com-2c5364?style=flat-square&logo=hackthebox&logoColor=white" /></a>
+</p>
 
 ---
 
