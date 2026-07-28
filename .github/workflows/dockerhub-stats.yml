@@ -1,0 +1,87 @@
+name: Update Docker Hub stats
+
+on:
+  schedule:
+    # GitHub Actions schedules use UTC. Offset from the busiest top-of-hour window.
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
+      - name: Refresh Docker Hub statistics
+        env:
+          DOCKERHUB_NAMESPACE: madtomy
+        run: |
+          node <<'NODE'
+          const fs = require('node:fs');
+
+          (async () => {
+          const namespace = process.env.DOCKERHUB_NAMESPACE;
+          const repositories = [];
+          let url = `https://hub.docker.com/v2/repositories/${namespace}/?page_size=100`;
+
+          while (url) {
+            const response = await fetch(url);
+            if (!response.ok) {
+              throw new Error(`Docker Hub API request failed: ${response.status} ${response.statusText}`);
+            }
+            const page = await response.json();
+            repositories.push(...page.results);
+            url = page.next;
+          }
+
+          const images = repositories
+            .map(({ name, pull_count }) => ({ name, pulls: Number(pull_count) || 0 }))
+            .sort((a, b) => b.pulls - a.pulls || a.name.localeCompare(b.name));
+          const totalPulls = images.reduce((sum, image) => sum + image.pulls, 0);
+          const format = new Intl.NumberFormat('en-US');
+          const table = images.map(({ name, pulls }) =>
+            `| [\`${name}\`](https://hub.docker.com/r/${namespace}/${name}) | ${format.format(pulls)} |`
+          ).join('\n');
+          const stats = `<p align="center">
+  <a href="https://hub.docker.com/u/${namespace}"><img src="https://img.shields.io/badge/Docker%20Hub-${encodeURIComponent(format.format(totalPulls) + ' pulls')}-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker Hub pulls" /></a>
+  <a href="https://hub.docker.com/u/${namespace}"><img src="https://img.shields.io/badge/Public%20images-${images.length}-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Public Docker images" /></a>
+</p>
+
+| Image | Pulls |
+| :-- | --: |
+${table}
+
+<sub>Updated daily from Docker Hub's public API.</sub>`;
+
+          const readmePath = 'README.md';
+          const readme = fs.readFileSync(readmePath, 'utf8');
+          const markers = /<!-- DOCKERHUB_STATS:START -->[\s\S]*?<!-- DOCKERHUB_STATS:END -->/;
+          if (!markers.test(readme)) {
+            throw new Error('Docker Hub README markers are missing.');
+          }
+          const updated = readme.replace(
+            markers,
+            `<!-- DOCKERHUB_STATS:START -->\n${stats}\n<!-- DOCKERHUB_STATS:END -->`,
+          );
+          fs.writeFileSync(readmePath, updated);
+          })().catch((error) => {
+            console.error(error);
+            process.exit(1);
+          });
+          NODE
+
+      - name: Commit refreshed stats when changed
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "Docker Hub statistics have not changed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: refresh Docker Hub statistics"
+          git push
