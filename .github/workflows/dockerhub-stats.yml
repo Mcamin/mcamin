@@ -46,16 +46,18 @@ jobs:
           const table = images.map(({ name, pulls }) =>
             `| [\`${name}\`](https://hub.docker.com/r/${namespace}/${name}) | ${format.format(pulls)} |`
           ).join('\n');
-          const stats = `<p align="center">
-  <a href="https://hub.docker.com/u/${namespace}"><img src="https://img.shields.io/badge/Docker%20Hub-${encodeURIComponent(format.format(totalPulls) + ' pulls')}-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker Hub pulls" /></a>
-  <a href="https://hub.docker.com/u/${namespace}"><img src="https://img.shields.io/badge/Public%20images-${images.length}-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Public Docker images" /></a>
-</p>
-
-| Image | Pulls |
-| :-- | --: |
-${table}
-
-<sub>Updated daily from Docker Hub's public API.</sub>`;
+          const stats = [
+            '<p align="center">',
+            `  <a href="https://hub.docker.com/u/${namespace}"><img src="https://img.shields.io/badge/Docker%20Hub-${encodeURIComponent(format.format(totalPulls) + ' pulls')}-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker Hub pulls" /></a>`,
+            `  <a href="https://hub.docker.com/u/${namespace}"><img src="https://img.shields.io/badge/Public%20images-${images.length}-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Public Docker images" /></a>`,
+            '</p>',
+            '',
+            '| Image | Pulls |',
+            '| :-- | --: |',
+            table,
+            '',
+            '<sub>Updated daily from Docker Hub\'s public API.</sub>',
+          ].join('\n');
 
           const readmePath = 'README.md';
           const readme = fs.readFileSync(readmePath, 'utf8');
