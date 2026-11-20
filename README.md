@@ -69,14 +69,14 @@ ai_automation: [LLM routing, RAG/agents, MCP tool integration, workflow automati
 
 <!-- DOCKERHUB_STATS:START -->
 <p align="center">
-  <a href="https://hub.docker.com/u/madtomy"><img src="https://img.shields.io/badge/Docker%20Hub-37%2C932%20pulls-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker Hub pulls" /></a>
+  <a href="https://hub.docker.com/u/madtomy"><img src="https://img.shields.io/badge/Docker%20Hub-37%2C981%20pulls-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker Hub pulls" /></a>
   <a href="https://hub.docker.com/u/madtomy"><img src="https://img.shields.io/badge/Public%20images-7-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Public Docker images" /></a>
 </p>
 
 | Image | Pulls |
 | :-- | --: |
-| [`comfy-ui`](https://hub.docker.com/r/madtomy/comfy-ui) | 27,544 |
-| [`jobscraper-api`](https://hub.docker.com/r/madtomy/jobscraper-api) | 8,516 |
+| [`comfy-ui`](https://hub.docker.com/r/madtomy/comfy-ui) | 27,592 |
+| [`jobscraper-api`](https://hub.docker.com/r/madtomy/jobscraper-api) | 8,517 |
 | [`comfy-download`](https://hub.docker.com/r/madtomy/comfy-download) | 804 |
 | [`jellyfin-media-status-sync`](https://hub.docker.com/r/madtomy/jellyfin-media-status-sync) | 457 |
 | [`jupyter-gpu`](https://hub.docker.com/r/madtomy/jupyter-gpu) | 359 |
