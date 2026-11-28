@@ -138,7 +138,7 @@
           data-testid="lang-progress"
           x="0"
           y="0"
-          width="120.12"
+          width="119.95"
           height="8"
           fill="#3572A5"
         />
@@ -146,9 +146,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="120.12"
+          x="119.95"
           y="0"
-          width="113.84"
+          width="113.68"
           height="8"
           fill="#DA5B0B"
         />
@@ -156,9 +156,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="233.96"
+          x="233.63"
           y="0"
-          width="13.28"
+          width="13.6"
           height="8"
           fill="#89e051"
         />
@@ -166,9 +166,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="247.24"
+          x="247.23"
           y="0"
-          width="12.72"
+          width="12.71"
           height="8"
           fill="#384d54"
         />
@@ -176,11 +176,21 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="249.96"
+          x="249.94"
           y="0"
           width="10.04"
           height="8"
           fill="#7e858d"
+        />
+      
+        <rect
+          mask="url(#rect-mask)"
+          data-testid="lang-progress"
+          x="249.98"
+          y="0"
+          width="10.01"
+          height="8"
+          fill="#a52a22"
         />
       
       
@@ -189,28 +199,28 @@
     <g class="stagger" style="animation-delay: 450ms">
       <circle cx="5" cy="6" r="5" fill="#3572A5" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Python 48.05%
+        Python 47.98%
       </text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" style="animation-delay: 600ms">
       <circle cx="5" cy="6" r="5" fill="#DA5B0B" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Jupyter Notebook 45.54%
+        Jupyter Notebook 45.47%
       </text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms">
       <circle cx="5" cy="6" r="5" fill="#89e051" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Shell 5.31%
+        Shell 5.44%
       </text>
     </g>
   </g></g><g transform="translate(150, 0)"><g transform="translate(0, 0)">
     <g class="stagger" style="animation-delay: 450ms">
       <circle cx="5" cy="6" r="5" fill="#384d54" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Dockerfile 1.09%
+        Dockerfile 1.08%
       </text>
     </g>
   </g><g transform="translate(0, 25)">
@@ -218,6 +228,13 @@
       <circle cx="5" cy="6" r="5" fill="#7e858d" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
         Mako 0.02%
+      </text>
+    </g>
+  </g><g transform="translate(0, 50)">
+    <g class="stagger" style="animation-delay: 750ms">
+      <circle cx="5" cy="6" r="5" fill="#a52a22" />
+      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
+        Jinja 0.01%
       </text>
     </g>
   </g></g>
